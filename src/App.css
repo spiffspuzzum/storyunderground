@@ -1,0 +1,57 @@
+.nav-wrapper {
+	background-color: #333333;
+}
+.site-title {
+	font-family: "Passion One";
+	font-size: 50px;
+	margin-left: 10px;
+}
+.page-footer,
+.btn, 
+.btn-large,
+.btn:hover, 
+.btn-large:hover, 
+.btn-small:hover,
+.btn:focus, 
+.btn-large:focus, 
+.btn-small:focus
+{
+	background-color: #444444;
+}
+.page-footer .footer-copyright {
+	background-color: #333333;
+}
+#footer-img {
+	max-height: 200px;
+}
+.page-footer p{
+	font-size: 1.2em;
+}
+.card .card-title {
+	font-family: "Passion One";
+	font-size: 40px;
+}
+blockquote {
+    border-color: #ccc;
+}
+.btn:hover {
+	background-color: #333333;
+}
+a.btn:visited {
+	background-color: #444444;	
+}
+.story-description {
+	margin: 20px 0;
+}
+.chips-wrapper {
+	margin-top: 20px;
+}
+.links-wrapper a{
+	margin: 0 5px;
+}
+.card .card-content p {
+	margin: inherit;
+}
+.card .card-action {
+	padding-bottom: 0;
+}
