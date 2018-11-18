@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import './css/materialize.min.css';
-import './App.css';
+import React, { Component } from "react";
+import "./css/materialize.css";
+import "./App.css";
 
 import Nav from "./components/Nav";
 import Grid from "./components/Grid";
