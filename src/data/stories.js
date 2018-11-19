@@ -2,8 +2,12 @@ export const Stories = [
   {
     id: 1,
     title: "A Most Unpleasant Endeavour",
-    image: "images/amue-s.jpg",
-    altText: "Plushies climbing along a sheer cliff",
+    images: [
+      {
+        src: "images/amue-s.jpg",
+        altText: "Plushies climbing along a sheer cliff"
+      }
+    ],
     links: [
       {
         linkText: "Buy on Amazon",
@@ -18,9 +22,13 @@ export const Stories = [
   {
     id: 2,
     title: "Into the Strange",
-    image: "images/its-s.jpg",
-    altText:
-      "A child flying over a futuristic city with huge monsters below her",
+    images: [
+      {
+        src: "images/its-s.jpg",
+        altText:
+          "A child flying over a futuristic city with huge monsters below her"
+      }
+    ],
     links: [
       {
         linkText: "Buy on Amazon",
@@ -35,8 +43,16 @@ export const Stories = [
   {
     id: 3,
     title: "I Should Have Been a Barbarian",
-    image: "images/ishbab-s.jpg",
-    altText: "A knight battling an opponent",
+    images: [
+      {
+        src: "images/ishbab-s.jpg",
+        altText: "A knight battling an opponent"
+      },
+      {
+        src: "images/ishbab2-s.jpg",
+        altText: "A knight in armor"
+      }
+    ],
     links: [
       { linkText: "PDF", href: "pubs/ishbab.pdf" },
       { linkText: "EPUB", href: "pubs/ishbab.epub" }
@@ -49,8 +65,16 @@ export const Stories = [
   {
     id: 4,
     title: "Happy Fun Times Distribution",
-    image: "images/hftd-s.jpg",
-    altText: "Entrance of a seedy bar from the sidewalk outside",
+    images: [
+      {
+        src: "images/hftd-s.jpg",
+        altText: "Entrance of a seedy bar from the sidewalk outside"
+      },
+      {
+        src: "images/hftd2-s.jpg",
+        altText: "Red neon sign that reads come in and visit"
+      }
+    ],
     links: [
       { linkText: "PDF", href: "pubs/happy_fun_times_distribution.pdf" },
       { linkText: "EPUB", href: "pubs/happy_fun_times_distribution.epub" }
@@ -63,8 +87,20 @@ export const Stories = [
   {
     id: 5,
     title: "Boost",
-    image: "images/boost-s.jpg",
-    altText: "Gear shifter of a luxury sports car",
+    images: [
+      {
+        src: "images/boost-s.jpg",
+        altText: "Gear shifter of a luxury sports car"
+      },
+      {
+        src: "images/boost3-s.jpg",
+        altText: "Hooded man watching traffic flow by in city"
+      },
+      {
+        src: "images/boost2-s.jpg",
+        altText: "Man that is hidden in darkness wearing an omninous mask"
+      }
+    ],
     links: [
       { linkText: "PDF", href: "pubs/boost.pdf" },
       { linkText: "EPUB", href: "pubs/boost.epub" }
@@ -77,8 +113,12 @@ export const Stories = [
   {
     id: 6,
     title: "Across the Ashes",
-    image: "images/ata-s.jpg",
-    altText: "A single man on a lonely wasteland",
+    images: [
+      {
+        src: "images/ata-s.jpg",
+        altText: "A single man on a lonely wasteland"
+      }
+    ],
     links: [
       { linkText: "PDF", href: "pubs/across_the_ashes.pdf" },
       { linkText: "EPUB", href: "pubs/across_the_ashes.epub" }
@@ -91,8 +131,12 @@ export const Stories = [
   {
     id: 7,
     title: "Truck Stop",
-    image: "images/truck-stop-s.jpg",
-    altText: "Trucks moving down the highway",
+    images: [
+      {
+        src: "images/truck-stop-s.jpg",
+        altText: "Trucks moving down the highway"
+      }
+    ],
     links: [
       {
         linkText: "HTML",
