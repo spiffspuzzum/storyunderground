@@ -68,7 +68,9 @@ export const Stories = [
     images: [
       {
         src: "images/hftd-s.jpg",
-        altText: "Entrance of a seedy bar from the sidewalk outside"
+        altText: "Entrance of a seedy bar from the sidewalk outside",
+        photographer: "mali maeder",
+        photographerLink: "https://www.nacasa.de"
       },
       {
         src: "images/hftd2-s.jpg",
@@ -146,6 +148,28 @@ export const Stories = [
     ],
     description: `<blockquote><p>I usually don’t drive through the night, but I spent a few hours at the casino and I needed to catch up. Most truckers suck down energy drinks or chew pills to stay awake, but nothing keeps me up like a rowdy pecker. So I watch porn on a little TV that I got mounted on my dashboard. All it takes is the sound. I don’t have to take my eyes off the road much, only during the good parts.  So I’m horny as hell by the time I roll into the gas station at sunrise.</p></blockquote>`,
     tags: ["General", "Dirty"],
+    storyType: "Short",
+    visible: true
+  },
+  {
+    id: 8,
+    title: `Marie's Lovely Picture`,
+    images: [
+      {
+        src: "images/mlp-s.jpg",
+        altText: "Small girl drawing a picture",
+        photographer: "Sarah Jane",
+        photographerLink: "https://www.facebook.com/szphotovideo/"
+      }
+    ],
+    links: [
+      {
+        linkText: "Coming soon",
+        href: `https://everydayfiction.com/`
+      }
+    ],
+    description: `<blockquote>She's lying on her stomach, slowly kicking her feet as if swimming through the thick carpet. Her small, blonde head is propped up by a skinny elbow, and she is lazily dragging a felt marker over a crisp sheet of paper. I can’t tell what she's drawing, but her pictures always start as random shapes that congeal into something surprising.</blockquote>`,
+    tags: [`General`],
     storyType: "Short",
     visible: true
   }
