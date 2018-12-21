@@ -1,6 +1,5 @@
 export const Stories = [
   {
-    id: 1,
     title: "A Most Unpleasant Endeavour",
     images: [
       {
@@ -20,7 +19,6 @@ export const Stories = [
     visible: true
   },
   {
-    id: 2,
     title: "Into the Strange",
     images: [
       {
@@ -41,7 +39,6 @@ export const Stories = [
     visible: true
   },
   {
-    id: 3,
     title: "I Should Have Been a Barbarian",
     images: [
       {
@@ -63,7 +60,6 @@ export const Stories = [
     visible: true
   },
   {
-    id: 4,
     title: "Happy Fun Times Distribution",
     images: [
       {
@@ -78,8 +74,14 @@ export const Stories = [
       }
     ],
     links: [
-      { linkText: "PDF", href: "pubs/happy_fun_times_distribution.pdf" },
-      { linkText: "EPUB", href: "pubs/happy_fun_times_distribution.epub" }
+      {
+        linkText: "PDF",
+        href: "pubs/happy_fun_times_distribution.pdf"
+      },
+      {
+        linkText: "EPUB",
+        href: "pubs/happy_fun_times_distribution.epub"
+      }
     ],
     description: `<p>Will an aging male stripper win a record four NASTis (Northwest Annual Stripper Trials) in a row, or will celebrity judge and 70s porn legend Rod Holder mean the end of his reign?</p><blockquote><p>When the snack tray is empty, Sid whips his hairnet into the frenzied crowd, removes his condiment stained shirt with a practiced flick of the wrist, and begins to dance. Patrons start tossing dollar bills onto the stage, and Sid clicks the buttons on his heavy change-belt, showering them with nickels and dimes.</p><p>I'm the only stripper that will give change for a dollar.</p></blockquote>`,
     tags: ["General", "Humor"],
@@ -87,7 +89,6 @@ export const Stories = [
     visible: true
   },
   {
-    id: 5,
     title: "Boost",
     images: [
       {
@@ -113,7 +114,6 @@ export const Stories = [
     visible: true
   },
   {
-    id: 6,
     title: "Across the Ashes",
     images: [
       {
@@ -131,7 +131,6 @@ export const Stories = [
     visible: true
   },
   {
-    id: 7,
     title: "Truck Stop",
     images: [
       {
@@ -152,7 +151,6 @@ export const Stories = [
     visible: true
   },
   {
-    id: 8,
     title: `Marie's Lovely Picture`,
     images: [
       {
