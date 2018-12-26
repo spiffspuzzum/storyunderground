@@ -21,10 +21,10 @@ const Grid = () => {
     <div className="container">
       <div className="row">
         <div className="col s12 m6">
-          <Namer />
           {stories.slice(0, stories.length / 2)}</div>
         <div className="col s12 m6">
           {stories.slice(stories.length / 2, stories.length)}
+          <Namer />
         </div>
       </div>
     </div>
