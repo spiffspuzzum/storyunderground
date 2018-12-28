@@ -14,7 +14,7 @@ const Card = ({ story }) => {
     <div
       className={
         story.visible
-          ? "card scale-transition"
+          ? "card scale-transition scale-in"
           : "card scale-transition scale-out"
       }
     >

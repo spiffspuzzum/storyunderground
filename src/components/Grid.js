@@ -13,8 +13,8 @@ const Grid = () => {
   //     stories.push(element);
   // }
  
-  const stories = Stories.map( (story, index) => {
-    return <Card story={story} key={index} />;
+  const stories = Stories.map( story => {
+    return <Card story={story} key={story.id} />;
   });
 
   return (

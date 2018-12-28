@@ -1,5 +1,6 @@
 export const Stories = [
   {
+    id: 1,
     title: "A Most Unpleasant Endeavour",
     images: [
       {
@@ -19,6 +20,7 @@ export const Stories = [
     visible: true
   },
   {
+     id: 2,
     title: "Into the Strange",
     images: [
       {
@@ -39,6 +41,7 @@ export const Stories = [
     visible: true
   },
   {
+     id: 3,
     title: "I Should Have Been a Barbarian",
     images: [
       {
@@ -60,6 +63,7 @@ export const Stories = [
     visible: true
   },
   {
+     id: 4,
     title: "Happy Fun Times Distribution",
     images: [
       {
@@ -89,6 +93,7 @@ export const Stories = [
     visible: true
   },
   {
+     id: 5,
     title: "Boost",
     images: [
       {
@@ -114,6 +119,7 @@ export const Stories = [
     visible: true
   },
   {
+     id: 6,
     title: "Across the Ashes",
     images: [
       {
@@ -131,6 +137,7 @@ export const Stories = [
     visible: true
   },
   {
+     id: 7,
     title: "Truck Stop",
     images: [
       {
@@ -151,6 +158,7 @@ export const Stories = [
     visible: true
   },
   {
+     id: 8,
     title: `Marie's Lovely Picture`,
     images: [
       {
