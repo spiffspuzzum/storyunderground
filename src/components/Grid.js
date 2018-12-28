@@ -5,15 +5,20 @@ import { Stories } from "../data/stories";
 import Namer from './Namer/Namer';
 
 const Grid = () => {
-  // let stories = [];
+  //put stories in random order
+   const data = [...Stories];
+   let randomList = [];
 
-  // while(Stories.length >0 ){
-  //     const random = Math.floor(Math.random() * Stories.length);
-  //     let element = Stories.splice(random, 1);
-  //     stories.push(element);
-  // }
- 
-  const stories = Stories.map( story => {
+  while(data.length > 0 ){
+      const random = Math.floor(Math.random() * data.length);
+      let element = data.splice(random, 1);
+      randomList.push(element);
+  }
+
+  //flatten from array of arrays to array of objects
+  randomList = randomList.flat();
+
+  const stories = randomList.map( story => {
     return <Card story={story} key={story.id} />;
   });
 
@@ -21,7 +26,8 @@ const Grid = () => {
     <div className="container">
       <div className="row">
         <div className="col s12 m6">
-          {stories.slice(0, stories.length / 2)}</div>
+          {stories.slice(0, stories.length / 2)}
+        </div>
         <div className="col s12 m6">
           {stories.slice(stories.length / 2, stories.length)}
           <Namer />
