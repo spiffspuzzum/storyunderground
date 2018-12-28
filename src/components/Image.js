@@ -14,6 +14,7 @@ class Image extends Component {
   componentDidMount(props) {
     let imagesArrayLength = this.images.length;
 
+    //Select random length of time between 12 and 5 seconds
     function randomNumber() {
       return Math.floor(Math.random() * (12000 - 5000) + 5000);
     }
