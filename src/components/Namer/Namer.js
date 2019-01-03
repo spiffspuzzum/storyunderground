@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ShowOptions from './ShowOptions';
 import ShowNames from "./ShowNames";
+import axios from 'axios';
 
 class Namer extends Component {
 
@@ -10,14 +11,14 @@ class Namer extends Component {
             data: [],
             showNames: false,
             includePrefix: false,
-            includeSuffix: false
+            includeSuffix: false,
+            gotData: false
         };
     };   
 
-    getNames() {
-        fetch(`https://namegeneratorservice.herokuapp.com/api/plushies/`)
-        .then(res => res.json())
-        .then(json => this.setState({ data: json }));
+    getNames = async () => {
+        const { data } = await axios.get(`https://namegeneratorservice.herokuapp.com/api/plushies/`);
+        this.setState({ data, gotData: true });
     };
 
     componentDidMount() {
@@ -50,15 +51,17 @@ class Namer extends Component {
     };
 
     getName = () => {
+        const { includePrefix, includeSuffix, data } = this.state;
+
         let name = '';
-        if(this.state.includePrefix) {
-            name = this.state.data.prefix.shift() + ' ';
+        if(includePrefix) {
+            name = data.prefix.shift() + ' ';
         }
         
-        name += this.state.data.main.shift();
+        name += data.main.shift();
         
-        if(this.state.includeSuffix) {
-            name = name + ' ' + this.state.data.suffix.shift();
+        if(includeSuffix) {
+            name = name + ' ' + data.suffix.shift();
         }
         return name;
     }
@@ -76,6 +79,7 @@ class Namer extends Component {
                             setPrefix={this.setPrefix}
                             setSuffix={this.setSuffix}
                             showNames={this.showNames}
+                            gotData={this.state.gotData}
                             /> : 
                             <ShowNames 
                                 showOptions={this.showOptions}

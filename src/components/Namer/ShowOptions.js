@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ShowOptions = ({ setPrefix, setSuffix, showNames }) => {
+const ShowOptions = ({ setPrefix, setSuffix, showNames, gotData }) => {
     return (
         <React.Fragment>
              <div>
@@ -25,7 +25,7 @@ const ShowOptions = ({ setPrefix, setSuffix, showNames }) => {
                     </label>
                 </div>
             </div>
-            <button onClick={showNames} className="btn waves-effect waves-light names">Give me the names!</button>
+            <button onClick={showNames} disabled={!gotData} className="btn waves-effect waves-light names">Give me the names!</button>
         </React.Fragment>
     );
 };

@@ -6,7 +6,7 @@ import Links from "./Links";
 import Image from "./Image";
 
 const Card = ({ story }) => {
-  function createMarkup() {
+  const createMarkup = () => {
     return { __html: story.description };
   }
 
@@ -28,8 +28,7 @@ const Card = ({ story }) => {
         <Chips tags={story.tags} storyType={story.storyType} />
         <div
           className="story-description"
-          dangerouslySetInnerHTML={createMarkup()}
-        />
+          dangerouslySetInnerHTML={createMarkup()} />
         <div className="card-action">
           <Links links={story.links} />
         </div>
