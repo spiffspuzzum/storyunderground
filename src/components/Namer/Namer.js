@@ -17,8 +17,14 @@ class Namer extends Component {
     };   
 
     getNames = async () => {
+        try {
         const { data } = await axios.get(`https://namegeneratorservice.herokuapp.com/api/plushies/`);
         this.setState({ data, gotData: true });
+        }
+        catch(e) {
+            console.log('error:', e);
+            this.setState({ gotData: false });
+        }
     };
 
     componentDidMount() {
