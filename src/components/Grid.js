@@ -29,7 +29,7 @@ const Grid = () => {
           {stories.slice(0, (stories.length / 2)+ 1)}
         </div>
         <div className="col s12 m6">
-          {stories.slice(stories.length / 2, stories.length)}
+          {stories.slice((stories.length / 2) + 1, stories.length)}
           <Namer />
         </div>
       </div>
