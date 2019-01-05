@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ShowOptions from './ShowOptions';
 import ShowNames from "./ShowNames";
 import axios from 'axios';
+import * as Sentry from '@sentry/browser';
 
 class Namer extends Component {
 
@@ -18,11 +19,11 @@ class Namer extends Component {
 
     getNames = async () => {
         try {
-        const { data } = await axios.get(`https://namegeneratorservice.herokuapp.com/api/plushies/`);
-        this.setState({ data, gotData: true });
+            const { data } = await axios.get(`https://namegeneratorservice.herokuapp.com/api/plushies/`);
+            this.setState({ data, gotData: true });
         }
         catch(e) {
-            console.log('error:', e);
+            Sentry.captureException(error);
             this.setState({ gotData: false });
         }
     };
