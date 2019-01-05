@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ShowOptions from './ShowOptions';
 import ShowNames from "./ShowNames";
 import axios from 'axios';
-import * as Sentry from '@sentry/browser';
+import logService from '../../services/logService';
 
 class Namer extends Component {
 
@@ -23,7 +23,7 @@ class Namer extends Component {
             this.setState({ data, gotData: true });
         }
         catch(e) {
-            Sentry.captureException(error);
+            logService.log(e);
             this.setState({ gotData: false });
         }
     };

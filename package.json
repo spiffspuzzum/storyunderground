@@ -24,7 +24,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "node-fetch": "^2.3.0"
-  }
+  "main": "index.js",
+  "repository": "https://github.com/spiffspuzzum/storyunderground.git",
+  "author": "Robert Norton <spiffspuzzum@users.noreply.github.com>",
+  "license": "MIT"
 }
