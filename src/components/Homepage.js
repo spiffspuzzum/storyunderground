@@ -1,14 +1,12 @@
 import React from "react";
-
 import Card from "./Card";
 import { Stories } from "../data/stories";
 import Namer from './Namer/Namer';
 
-const Grid = () => {
-  //put stories in random order
-   const data = [...Stories];
-   let randomList = [];
-
+const Homepage = () => {
+  //Put stories in random order
+  const data = [...Stories];
+  let randomList = [];
   while(data.length > 0 ){
       const random = Math.floor(Math.random() * data.length);
       let element = data.splice(random, 1);
@@ -37,4 +35,4 @@ const Grid = () => {
   );
 };
 
-export default Grid;
+export default Homepage;

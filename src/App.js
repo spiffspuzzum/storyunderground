@@ -1,19 +1,23 @@
 import React, { Component } from "react";
+import { Route, Switch } from 'react-router-dom';
+import Nav from "./components/Nav";
+import Homepage from "./components/Homepage";
+import Art from './components/Art/Art';
+import Footer from "./components/Footer";
 import "./css/materialize.css";
 import "./App.css";
-
-import Nav from "./components/Nav";
-import Grid from "./components/Grid";
-import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Nav />
-        <Grid />
+        <Switch>
+          <Route path="/art" component={Art} />
+          <Route path="/" component={Homepage} />
+        </Switch>
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }

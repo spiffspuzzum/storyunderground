@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import Chips from "./Chips";
 import Links from "./Links";
 import Image from "./Image";

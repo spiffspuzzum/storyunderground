@@ -12,25 +12,26 @@ class Image extends Component {
   }
 
   componentDidMount(props) {
-    let imagesArrayLength = this.images.length;
 
     //Select random length of time between 12 and 5 seconds
-    function randomNumber() {
-      return Math.floor(Math.random() * (12000 - 5000) + 5000);
-    }
+    // function randomNumber() {
+    //   return Math.floor(Math.random() * (12000 - 5000) + 5000);
+    // };
 
-    if (imagesArrayLength > 1) {
-      setInterval(() => {
-        if (this.state.imageIndex < imagesArrayLength - 1) {
-          this.setState(prevState => ({
-            imageIndex: prevState.imageIndex + 1
-          }));
-        } else {
-          this.setState({ imageIndex: 0 });
-        }
-      }, randomNumber());
-    }
+    
+    // if (imagesArrayLength > 1) {
+    //   setInterval( changeImage(), randomNumber());
+    // }
+    
+    // const changeImage = () => {
+    
+    // };
+
   }
+
+  componentWillUnmount() {
+    
+  };
 
   render() {
     const { images } = this.props;
